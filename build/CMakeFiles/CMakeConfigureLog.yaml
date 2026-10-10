@@ -5,7 +5,7 @@ events:
     kind: "find-v1"
     backtrace:
       - "/usr/share/cmake/Modules/CMakeDetermineSystem.cmake:12 (find_program)"
-      - "CMakeLists.txt"
+      - "CMakeLists.txt:4 (project)"
     mode: "program"
     variable: "CMAKE_UNAME"
     description: "Path to a program."
@@ -40,6 +40,8 @@ events:
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
+      - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/bin/"
     searched_directories:
       - "/home/gopalkrishnajs/.local/share/mise/installs/codex/latest/bin/uname"
@@ -71,6 +73,7 @@ events:
         - "/home/gopalkrishnajs/.local/share/mise/installs/pi/latest/pi"
         - "/home/gopalkrishnajs/.local/share/mise/shims"
         - "/home/gopalkrishnajs/.local/bin"
+        - "/home/gopalkrishnajs/.local/bin"
         - "/usr/share/omarchy/bin"
         - "/home/gopalkrishnajs/.local/bin"
         - "/home/gopalkrishnajs/.local/bin"
@@ -83,18 +86,20 @@ events:
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
+        - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
   -
     kind: "message-v1"
     backtrace:
       - "/usr/share/cmake/Modules/CMakeDetermineSystem.cmake:218 (message)"
-      - "CMakeLists.txt"
+      - "CMakeLists.txt:4 (project)"
     message: |
       The system is: Linux - 7.2.5-3-omarchy - x86_64
   -
     kind: "find-v1"
     backtrace:
       - "/usr/share/cmake/Modules/CMakeNinjaFindMake.cmake:5 (find_program)"
-      - "CMakeLists.txt"
+      - "CMakeLists.txt:4 (project)"
     mode: "program"
     variable: "CMAKE_MAKE_PROGRAM"
     description: "Program used to build from build.ninja files."
@@ -131,6 +136,8 @@ events:
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
+      - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
     searched_directories:
       - "/home/gopalkrishnajs/.local/share/mise/installs/codex/latest/bin/ninja-build"
       - "/home/gopalkrishnajs/.local/share/mise/installs/codex/latest/bin/ninja"
@@ -192,6 +199,7 @@ events:
         - "/home/gopalkrishnajs/.local/share/mise/installs/pi/latest/pi"
         - "/home/gopalkrishnajs/.local/share/mise/shims"
         - "/home/gopalkrishnajs/.local/bin"
+        - "/home/gopalkrishnajs/.local/bin"
         - "/usr/share/omarchy/bin"
         - "/home/gopalkrishnajs/.local/bin"
         - "/home/gopalkrishnajs/.local/bin"
@@ -204,15 +212,17 @@ events:
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
+        - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
   -
     kind: "find-v1"
     backtrace:
       - "/usr/share/cmake/Modules/CMakeDetermineCompiler.cmake:73 (find_program)"
-      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:64 (_cmake_find_compiler)"
-      - "CMakeLists.txt"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:69 (_cmake_find_compiler)"
+      - "CMakeLists.txt:4 (project)"
     mode: "program"
-    variable: "CMAKE_C_COMPILER"
-    description: "C compiler"
+    variable: "CMAKE_CXX_COMPILER"
+    description: "CXX compiler"
     settings:
       SearchFramework: "NEVER"
       SearchAppBundle: "NEVER"
@@ -222,13 +232,16 @@ events:
       CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
       CMAKE_FIND_USE_INSTALL_PREFIX: true
     names:
-      - "cc"
-      - "gcc"
+      - "c++"
+      - "CC"
+      - "g++"
+      - "aCC"
       - "cl"
       - "bcc"
-      - "xlc"
+      - "xlC"
+      - "icpx"
       - "icx"
-      - "clang"
+      - "clang++"
     candidate_directories:
       - "/home/gopalkrishnajs/.local/share/mise/installs/codex/latest/bin/"
       - "/home/gopalkrishnajs/.local/share/mise/installs/copilot/latest/"
@@ -250,23 +263,25 @@ events:
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
+      - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
     searched_directories:
-      - "/home/gopalkrishnajs/.local/share/mise/installs/codex/latest/bin/cc"
-      - "/home/gopalkrishnajs/.local/share/mise/installs/copilot/latest/cc"
-      - "/home/gopalkrishnajs/.local/share/mise/installs/gh/latest/gh_2.102.0_linux_amd64/bin/cc"
-      - "/home/gopalkrishnajs/.local/share/mise/installs/github-can1357-oh-my-pi/latest/cc"
-      - "/home/gopalkrishnajs/.local/share/mise/installs/go/1.27.1/bin/cc"
-      - "/home/gopalkrishnajs/.local/share/mise/installs/java/latest/bin/cc"
-      - "/home/gopalkrishnajs/.local/share/mise/installs/node/26.7.0/bin/cc"
-      - "/home/gopalkrishnajs/.local/share/mise/installs/opencode/latest/cc"
-      - "/home/gopalkrishnajs/.local/share/mise/installs/pi/latest/pi/cc"
-      - "/home/gopalkrishnajs/.local/share/mise/shims/cc"
-      - "/home/gopalkrishnajs/.local/bin/cc"
-      - "/usr/share/omarchy/bin/cc"
-      - "/home/gopalkrishnajs/.cargo/bin/cc"
-      - "/usr/local/sbin/cc"
-      - "/usr/local/bin/cc"
-    found: "/usr/bin/cc"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/codex/latest/bin/c++"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/copilot/latest/c++"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/gh/latest/gh_2.102.0_linux_amd64/bin/c++"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/github-can1357-oh-my-pi/latest/c++"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/go/1.27.1/bin/c++"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/java/latest/bin/c++"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/node/26.7.0/bin/c++"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/opencode/latest/c++"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/pi/latest/pi/c++"
+      - "/home/gopalkrishnajs/.local/share/mise/shims/c++"
+      - "/home/gopalkrishnajs/.local/bin/c++"
+      - "/usr/share/omarchy/bin/c++"
+      - "/home/gopalkrishnajs/.cargo/bin/c++"
+      - "/usr/local/sbin/c++"
+      - "/usr/local/bin/c++"
+    found: "/usr/bin/c++"
     search_context:
       ENV{PATH}:
         - "/home/gopalkrishnajs/.local/share/mise/installs/codex/latest/bin"
@@ -280,6 +295,7 @@ events:
         - "/home/gopalkrishnajs/.local/share/mise/installs/pi/latest/pi"
         - "/home/gopalkrishnajs/.local/share/mise/shims"
         - "/home/gopalkrishnajs/.local/bin"
+        - "/home/gopalkrishnajs/.local/bin"
         - "/usr/share/omarchy/bin"
         - "/home/gopalkrishnajs/.local/bin"
         - "/home/gopalkrishnajs/.local/bin"
@@ -292,6 +308,8 @@ events:
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
+        - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
   -
     kind: "find-v1"
     backtrace:
@@ -299,8 +317,8 @@ events:
       - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:538 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
       - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
       - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:4 (project)"
     mode: "file"
     variable: "src_in"
     description: "Path to a file."
@@ -313,10 +331,10 @@ events:
       CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
       CMAKE_FIND_USE_INSTALL_PREFIX: true
     names:
-      - "CMakeCCompilerId.c.in"
+      - "CMakeCXXCompilerId.cpp.in"
     candidate_directories:
       - "/usr/share/cmake/Modules/"
-    found: "/usr/share/cmake/Modules/CMakeCCompilerId.c.in"
+    found: "/usr/share/cmake/Modules/CMakeCXXCompilerId.cpp.in"
     search_context:
       ENV{PATH}:
         - "/home/gopalkrishnajs/.local/share/mise/installs/codex/latest/bin"
@@ -330,6 +348,7 @@ events:
         - "/home/gopalkrishnajs/.local/share/mise/installs/pi/latest/pi"
         - "/home/gopalkrishnajs/.local/share/mise/shims"
         - "/home/gopalkrishnajs/.local/bin"
+        - "/home/gopalkrishnajs/.local/bin"
         - "/usr/share/omarchy/bin"
         - "/home/gopalkrishnajs/.local/bin"
         - "/home/gopalkrishnajs/.local/bin"
@@ -342,16 +361,18 @@ events:
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
+        - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
   -
     kind: "message-v1"
     backtrace:
       - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
       - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:4 (project)"
     message: |
-      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
-      Compiler: /usr/bin/cc 
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/bin/c++ 
       Build flags: 
       Id flags:  
       
@@ -359,17 +380,17 @@ events:
       0
       
       
-      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
       
-      The C compiler identification is GNU, found in:
-        /home/gopalkrishnajs/Projects/cpp-hft-engine/build/CMakeFiles/4.4.3/CompilerIdC/a.out
+      The CXX compiler identification is GNU, found in:
+        /home/gopalkrishnajs/Projects/cpp-hft-engine/build/CMakeFiles/4.4.3/CompilerIdCXX/a.out
       
   -
     kind: "find-v1"
     backtrace:
       - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
-      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:4 (project)"
     mode: "program"
     variable: "CMAKE_AR"
     description: "Path to a program."
@@ -404,6 +425,8 @@ events:
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
+      - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
     found: "/usr/bin/ar"
     search_context:
       ENV{PATH}:
@@ -418,6 +441,7 @@ events:
         - "/home/gopalkrishnajs/.local/share/mise/installs/pi/latest/pi"
         - "/home/gopalkrishnajs/.local/share/mise/shims"
         - "/home/gopalkrishnajs/.local/bin"
+        - "/home/gopalkrishnajs/.local/bin"
         - "/usr/share/omarchy/bin"
         - "/home/gopalkrishnajs/.local/bin"
         - "/home/gopalkrishnajs/.local/bin"
@@ -430,12 +454,14 @@ events:
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
+        - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
   -
     kind: "find-v1"
     backtrace:
       - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
-      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:4 (project)"
     mode: "program"
     variable: "CMAKE_RANLIB"
     description: "Path to a program."
@@ -470,6 +496,8 @@ events:
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
+      - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
     found: "/usr/bin/ranlib"
     search_context:
       ENV{PATH}:
@@ -484,6 +512,7 @@ events:
         - "/home/gopalkrishnajs/.local/share/mise/installs/pi/latest/pi"
         - "/home/gopalkrishnajs/.local/share/mise/shims"
         - "/home/gopalkrishnajs/.local/bin"
+        - "/home/gopalkrishnajs/.local/bin"
         - "/usr/share/omarchy/bin"
         - "/home/gopalkrishnajs/.local/bin"
         - "/home/gopalkrishnajs/.local/bin"
@@ -496,12 +525,14 @@ events:
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
+        - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
   -
     kind: "find-v1"
     backtrace:
       - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
-      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:4 (project)"
     mode: "program"
     variable: "CMAKE_STRIP"
     description: "Path to a program."
@@ -536,6 +567,8 @@ events:
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
+      - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
     found: "/usr/bin/strip"
     search_context:
       ENV{PATH}:
@@ -550,6 +583,7 @@ events:
         - "/home/gopalkrishnajs/.local/share/mise/installs/pi/latest/pi"
         - "/home/gopalkrishnajs/.local/share/mise/shims"
         - "/home/gopalkrishnajs/.local/bin"
+        - "/home/gopalkrishnajs/.local/bin"
         - "/usr/share/omarchy/bin"
         - "/home/gopalkrishnajs/.local/bin"
         - "/home/gopalkrishnajs/.local/bin"
@@ -562,12 +596,14 @@ events:
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
+        - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
   -
     kind: "find-v1"
     backtrace:
       - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
-      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:4 (project)"
     mode: "program"
     variable: "CMAKE_LINKER"
     description: "Path to a program."
@@ -602,6 +638,8 @@ events:
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
+      - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
     found: "/usr/bin/ld"
     search_context:
       ENV{PATH}:
@@ -616,6 +654,7 @@ events:
         - "/home/gopalkrishnajs/.local/share/mise/installs/pi/latest/pi"
         - "/home/gopalkrishnajs/.local/share/mise/shims"
         - "/home/gopalkrishnajs/.local/bin"
+        - "/home/gopalkrishnajs/.local/bin"
         - "/usr/share/omarchy/bin"
         - "/home/gopalkrishnajs/.local/bin"
         - "/home/gopalkrishnajs/.local/bin"
@@ -628,12 +667,14 @@ events:
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
+        - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
   -
     kind: "find-v1"
     backtrace:
       - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
-      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:4 (project)"
     mode: "program"
     variable: "CMAKE_NM"
     description: "Path to a program."
@@ -668,6 +709,8 @@ events:
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
+      - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
     found: "/usr/bin/nm"
     search_context:
       ENV{PATH}:
@@ -682,6 +725,7 @@ events:
         - "/home/gopalkrishnajs/.local/share/mise/installs/pi/latest/pi"
         - "/home/gopalkrishnajs/.local/share/mise/shims"
         - "/home/gopalkrishnajs/.local/bin"
+        - "/home/gopalkrishnajs/.local/bin"
         - "/usr/share/omarchy/bin"
         - "/home/gopalkrishnajs/.local/bin"
         - "/home/gopalkrishnajs/.local/bin"
@@ -694,12 +738,14 @@ events:
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
+        - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
   -
     kind: "find-v1"
     backtrace:
       - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
-      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:4 (project)"
     mode: "program"
     variable: "CMAKE_OBJDUMP"
     description: "Path to a program."
@@ -734,6 +780,8 @@ events:
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
+      - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
     found: "/usr/bin/objdump"
     search_context:
       ENV{PATH}:
@@ -748,6 +796,7 @@ events:
         - "/home/gopalkrishnajs/.local/share/mise/installs/pi/latest/pi"
         - "/home/gopalkrishnajs/.local/share/mise/shims"
         - "/home/gopalkrishnajs/.local/bin"
+        - "/home/gopalkrishnajs/.local/bin"
         - "/usr/share/omarchy/bin"
         - "/home/gopalkrishnajs/.local/bin"
         - "/home/gopalkrishnajs/.local/bin"
@@ -760,12 +809,14 @@ events:
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
+        - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
   -
     kind: "find-v1"
     backtrace:
       - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
-      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:4 (project)"
     mode: "program"
     variable: "CMAKE_OBJCOPY"
     description: "Path to a program."
@@ -800,6 +851,8 @@ events:
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
+      - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
     found: "/usr/bin/objcopy"
     search_context:
       ENV{PATH}:
@@ -814,6 +867,7 @@ events:
         - "/home/gopalkrishnajs/.local/share/mise/installs/pi/latest/pi"
         - "/home/gopalkrishnajs/.local/share/mise/shims"
         - "/home/gopalkrishnajs/.local/bin"
+        - "/home/gopalkrishnajs/.local/bin"
         - "/usr/share/omarchy/bin"
         - "/home/gopalkrishnajs/.local/bin"
         - "/home/gopalkrishnajs/.local/bin"
@@ -826,12 +880,14 @@ events:
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
+        - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
   -
     kind: "find-v1"
     backtrace:
       - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
-      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:4 (project)"
     mode: "program"
     variable: "CMAKE_READELF"
     description: "Path to a program."
@@ -866,6 +922,8 @@ events:
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
+      - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
     found: "/usr/bin/readelf"
     search_context:
       ENV{PATH}:
@@ -880,6 +938,7 @@ events:
         - "/home/gopalkrishnajs/.local/share/mise/installs/pi/latest/pi"
         - "/home/gopalkrishnajs/.local/share/mise/shims"
         - "/home/gopalkrishnajs/.local/bin"
+        - "/home/gopalkrishnajs/.local/bin"
         - "/usr/share/omarchy/bin"
         - "/home/gopalkrishnajs/.local/bin"
         - "/home/gopalkrishnajs/.local/bin"
@@ -892,12 +951,14 @@ events:
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
+        - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
   -
     kind: "find-v1"
     backtrace:
       - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
-      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:4 (project)"
     mode: "program"
     variable: "CMAKE_DLLTOOL"
     description: "Path to a program."
@@ -932,6 +993,8 @@ events:
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
+      - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
     searched_directories:
       - "/usr/bin/dlltool"
       - "/home/gopalkrishnajs/.local/share/mise/installs/codex/latest/bin/dlltool"
@@ -953,6 +1016,8 @@ events:
       - "/usr/bin/site_perl/dlltool"
       - "/usr/bin/vendor_perl/dlltool"
       - "/usr/bin/core_perl/dlltool"
+      - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/dlltool"
+      - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/dlltool"
     found: false
     search_context:
       ENV{PATH}:
@@ -967,6 +1032,7 @@ events:
         - "/home/gopalkrishnajs/.local/share/mise/installs/pi/latest/pi"
         - "/home/gopalkrishnajs/.local/share/mise/shims"
         - "/home/gopalkrishnajs/.local/bin"
+        - "/home/gopalkrishnajs/.local/bin"
         - "/usr/share/omarchy/bin"
         - "/home/gopalkrishnajs/.local/bin"
         - "/home/gopalkrishnajs/.local/bin"
@@ -979,12 +1045,14 @@ events:
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
+        - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
   -
     kind: "find-v1"
     backtrace:
       - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
-      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:4 (project)"
     mode: "program"
     variable: "CMAKE_ADDR2LINE"
     description: "Path to a program."
@@ -1019,6 +1087,8 @@ events:
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
+      - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
     found: "/usr/bin/addr2line"
     search_context:
       ENV{PATH}:
@@ -1033,6 +1103,7 @@ events:
         - "/home/gopalkrishnajs/.local/share/mise/installs/pi/latest/pi"
         - "/home/gopalkrishnajs/.local/share/mise/shims"
         - "/home/gopalkrishnajs/.local/bin"
+        - "/home/gopalkrishnajs/.local/bin"
         - "/usr/share/omarchy/bin"
         - "/home/gopalkrishnajs/.local/bin"
         - "/home/gopalkrishnajs/.local/bin"
@@ -1045,12 +1116,14 @@ events:
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
+        - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
   -
     kind: "find-v1"
     backtrace:
       - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
-      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:4 (project)"
     mode: "program"
     variable: "CMAKE_TAPI"
     description: "Path to a program."
@@ -1085,6 +1158,8 @@ events:
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
+      - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
     searched_directories:
       - "/usr/bin/tapi"
       - "/home/gopalkrishnajs/.local/share/mise/installs/codex/latest/bin/tapi"
@@ -1106,6 +1181,8 @@ events:
       - "/usr/bin/site_perl/tapi"
       - "/usr/bin/vendor_perl/tapi"
       - "/usr/bin/core_perl/tapi"
+      - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/tapi"
+      - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/tapi"
     found: false
     search_context:
       ENV{PATH}:
@@ -1120,135 +1197,6 @@ events:
         - "/home/gopalkrishnajs/.local/share/mise/installs/pi/latest/pi"
         - "/home/gopalkrishnajs/.local/share/mise/shims"
         - "/home/gopalkrishnajs/.local/bin"
-        - "/usr/share/omarchy/bin"
-        - "/home/gopalkrishnajs/.local/bin"
-        - "/home/gopalkrishnajs/.local/bin"
-        - "/home/gopalkrishnajs/.cargo/bin"
-        - "/usr/local/sbin"
-        - "/usr/local/bin"
-        - "/usr/bin"
-        - "/home/gopalkrishnajs/.local/bin"
-        - "/usr/lib/jvm/default/bin"
-        - "/usr/bin/site_perl"
-        - "/usr/bin/vendor_perl"
-        - "/usr/bin/core_perl"
-  -
-    kind: "find-v1"
-    backtrace:
-      - "/usr/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake:18 (find_program)"
-      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:201 (include)"
-      - "CMakeLists.txt"
-    mode: "program"
-    variable: "CMAKE_C_COMPILER_AR"
-    description: "A wrapper around 'ar' adding the appropriate '--plugin' option for the GCC compiler"
-    settings:
-      SearchFramework: "NEVER"
-      SearchAppBundle: "NEVER"
-      CMAKE_FIND_USE_CMAKE_PATH: false
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "gcc-ar-16.2"
-      - "gcc-ar-16"
-      - "gcc-ar16"
-      - "gcc-ar"
-    candidate_directories:
-      - "/usr/bin/"
-      - "/home/gopalkrishnajs/.local/share/mise/installs/codex/latest/bin/"
-      - "/home/gopalkrishnajs/.local/share/mise/installs/copilot/latest/"
-      - "/home/gopalkrishnajs/.local/share/mise/installs/gh/latest/gh_2.102.0_linux_amd64/bin/"
-      - "/home/gopalkrishnajs/.local/share/mise/installs/github-can1357-oh-my-pi/latest/"
-      - "/home/gopalkrishnajs/.local/share/mise/installs/go/1.27.1/bin/"
-      - "/home/gopalkrishnajs/.local/share/mise/installs/java/latest/bin/"
-      - "/home/gopalkrishnajs/.local/share/mise/installs/node/26.7.0/bin/"
-      - "/home/gopalkrishnajs/.local/share/mise/installs/opencode/latest/"
-      - "/home/gopalkrishnajs/.local/share/mise/installs/pi/latest/pi/"
-      - "/home/gopalkrishnajs/.local/share/mise/shims/"
-      - "/home/gopalkrishnajs/.local/bin/"
-      - "/usr/share/omarchy/bin/"
-      - "/home/gopalkrishnajs/.cargo/bin/"
-      - "/usr/local/sbin/"
-      - "/usr/local/bin/"
-      - "/usr/lib/jvm/default/bin/"
-      - "/usr/bin/site_perl/"
-      - "/usr/bin/vendor_perl/"
-      - "/usr/bin/core_perl/"
-    searched_directories:
-      - "/usr/bin/gcc-ar-16.2"
-      - "/home/gopalkrishnajs/.local/share/mise/installs/codex/latest/bin/gcc-ar-16.2"
-      - "/home/gopalkrishnajs/.local/share/mise/installs/copilot/latest/gcc-ar-16.2"
-      - "/home/gopalkrishnajs/.local/share/mise/installs/gh/latest/gh_2.102.0_linux_amd64/bin/gcc-ar-16.2"
-      - "/home/gopalkrishnajs/.local/share/mise/installs/github-can1357-oh-my-pi/latest/gcc-ar-16.2"
-      - "/home/gopalkrishnajs/.local/share/mise/installs/go/1.27.1/bin/gcc-ar-16.2"
-      - "/home/gopalkrishnajs/.local/share/mise/installs/java/latest/bin/gcc-ar-16.2"
-      - "/home/gopalkrishnajs/.local/share/mise/installs/node/26.7.0/bin/gcc-ar-16.2"
-      - "/home/gopalkrishnajs/.local/share/mise/installs/opencode/latest/gcc-ar-16.2"
-      - "/home/gopalkrishnajs/.local/share/mise/installs/pi/latest/pi/gcc-ar-16.2"
-      - "/home/gopalkrishnajs/.local/share/mise/shims/gcc-ar-16.2"
-      - "/home/gopalkrishnajs/.local/bin/gcc-ar-16.2"
-      - "/usr/share/omarchy/bin/gcc-ar-16.2"
-      - "/home/gopalkrishnajs/.cargo/bin/gcc-ar-16.2"
-      - "/usr/local/sbin/gcc-ar-16.2"
-      - "/usr/local/bin/gcc-ar-16.2"
-      - "/usr/lib/jvm/default/bin/gcc-ar-16.2"
-      - "/usr/bin/site_perl/gcc-ar-16.2"
-      - "/usr/bin/vendor_perl/gcc-ar-16.2"
-      - "/usr/bin/core_perl/gcc-ar-16.2"
-      - "/usr/bin/gcc-ar-16"
-      - "/home/gopalkrishnajs/.local/share/mise/installs/codex/latest/bin/gcc-ar-16"
-      - "/home/gopalkrishnajs/.local/share/mise/installs/copilot/latest/gcc-ar-16"
-      - "/home/gopalkrishnajs/.local/share/mise/installs/gh/latest/gh_2.102.0_linux_amd64/bin/gcc-ar-16"
-      - "/home/gopalkrishnajs/.local/share/mise/installs/github-can1357-oh-my-pi/latest/gcc-ar-16"
-      - "/home/gopalkrishnajs/.local/share/mise/installs/go/1.27.1/bin/gcc-ar-16"
-      - "/home/gopalkrishnajs/.local/share/mise/installs/java/latest/bin/gcc-ar-16"
-      - "/home/gopalkrishnajs/.local/share/mise/installs/node/26.7.0/bin/gcc-ar-16"
-      - "/home/gopalkrishnajs/.local/share/mise/installs/opencode/latest/gcc-ar-16"
-      - "/home/gopalkrishnajs/.local/share/mise/installs/pi/latest/pi/gcc-ar-16"
-      - "/home/gopalkrishnajs/.local/share/mise/shims/gcc-ar-16"
-      - "/home/gopalkrishnajs/.local/bin/gcc-ar-16"
-      - "/usr/share/omarchy/bin/gcc-ar-16"
-      - "/home/gopalkrishnajs/.cargo/bin/gcc-ar-16"
-      - "/usr/local/sbin/gcc-ar-16"
-      - "/usr/local/bin/gcc-ar-16"
-      - "/usr/lib/jvm/default/bin/gcc-ar-16"
-      - "/usr/bin/site_perl/gcc-ar-16"
-      - "/usr/bin/vendor_perl/gcc-ar-16"
-      - "/usr/bin/core_perl/gcc-ar-16"
-      - "/usr/bin/gcc-ar16"
-      - "/home/gopalkrishnajs/.local/share/mise/installs/codex/latest/bin/gcc-ar16"
-      - "/home/gopalkrishnajs/.local/share/mise/installs/copilot/latest/gcc-ar16"
-      - "/home/gopalkrishnajs/.local/share/mise/installs/gh/latest/gh_2.102.0_linux_amd64/bin/gcc-ar16"
-      - "/home/gopalkrishnajs/.local/share/mise/installs/github-can1357-oh-my-pi/latest/gcc-ar16"
-      - "/home/gopalkrishnajs/.local/share/mise/installs/go/1.27.1/bin/gcc-ar16"
-      - "/home/gopalkrishnajs/.local/share/mise/installs/java/latest/bin/gcc-ar16"
-      - "/home/gopalkrishnajs/.local/share/mise/installs/node/26.7.0/bin/gcc-ar16"
-      - "/home/gopalkrishnajs/.local/share/mise/installs/opencode/latest/gcc-ar16"
-      - "/home/gopalkrishnajs/.local/share/mise/installs/pi/latest/pi/gcc-ar16"
-      - "/home/gopalkrishnajs/.local/share/mise/shims/gcc-ar16"
-      - "/home/gopalkrishnajs/.local/bin/gcc-ar16"
-      - "/usr/share/omarchy/bin/gcc-ar16"
-      - "/home/gopalkrishnajs/.cargo/bin/gcc-ar16"
-      - "/usr/local/sbin/gcc-ar16"
-      - "/usr/local/bin/gcc-ar16"
-      - "/usr/lib/jvm/default/bin/gcc-ar16"
-      - "/usr/bin/site_perl/gcc-ar16"
-      - "/usr/bin/vendor_perl/gcc-ar16"
-      - "/usr/bin/core_perl/gcc-ar16"
-    found: "/usr/bin/gcc-ar"
-    search_context:
-      ENV{PATH}:
-        - "/home/gopalkrishnajs/.local/share/mise/installs/codex/latest/bin"
-        - "/home/gopalkrishnajs/.local/share/mise/installs/copilot/latest"
-        - "/home/gopalkrishnajs/.local/share/mise/installs/gh/latest/gh_2.102.0_linux_amd64/bin"
-        - "/home/gopalkrishnajs/.local/share/mise/installs/github-can1357-oh-my-pi/latest"
-        - "/home/gopalkrishnajs/.local/share/mise/installs/go/1.27.1/bin"
-        - "/home/gopalkrishnajs/.local/share/mise/installs/java/latest/bin"
-        - "/home/gopalkrishnajs/.local/share/mise/installs/node/26.7.0/bin"
-        - "/home/gopalkrishnajs/.local/share/mise/installs/opencode/latest"
-        - "/home/gopalkrishnajs/.local/share/mise/installs/pi/latest/pi"
-        - "/home/gopalkrishnajs/.local/share/mise/shims"
         - "/home/gopalkrishnajs/.local/bin"
         - "/usr/share/omarchy/bin"
         - "/home/gopalkrishnajs/.local/bin"
@@ -1262,270 +1210,14 @@ events:
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
-  -
-    kind: "find-v1"
-    backtrace:
-      - "/usr/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake:30 (find_program)"
-      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:201 (include)"
-      - "CMakeLists.txt"
-    mode: "program"
-    variable: "CMAKE_C_COMPILER_RANLIB"
-    description: "A wrapper around 'ranlib' adding the appropriate '--plugin' option for the GCC compiler"
-    settings:
-      SearchFramework: "NEVER"
-      SearchAppBundle: "NEVER"
-      CMAKE_FIND_USE_CMAKE_PATH: false
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "gcc-ranlib-16.2"
-      - "gcc-ranlib-16"
-      - "gcc-ranlib16"
-      - "gcc-ranlib"
-    candidate_directories:
-      - "/usr/bin/"
-      - "/home/gopalkrishnajs/.local/share/mise/installs/codex/latest/bin/"
-      - "/home/gopalkrishnajs/.local/share/mise/installs/copilot/latest/"
-      - "/home/gopalkrishnajs/.local/share/mise/installs/gh/latest/gh_2.102.0_linux_amd64/bin/"
-      - "/home/gopalkrishnajs/.local/share/mise/installs/github-can1357-oh-my-pi/latest/"
-      - "/home/gopalkrishnajs/.local/share/mise/installs/go/1.27.1/bin/"
-      - "/home/gopalkrishnajs/.local/share/mise/installs/java/latest/bin/"
-      - "/home/gopalkrishnajs/.local/share/mise/installs/node/26.7.0/bin/"
-      - "/home/gopalkrishnajs/.local/share/mise/installs/opencode/latest/"
-      - "/home/gopalkrishnajs/.local/share/mise/installs/pi/latest/pi/"
-      - "/home/gopalkrishnajs/.local/share/mise/shims/"
-      - "/home/gopalkrishnajs/.local/bin/"
-      - "/usr/share/omarchy/bin/"
-      - "/home/gopalkrishnajs/.cargo/bin/"
-      - "/usr/local/sbin/"
-      - "/usr/local/bin/"
-      - "/usr/lib/jvm/default/bin/"
-      - "/usr/bin/site_perl/"
-      - "/usr/bin/vendor_perl/"
-      - "/usr/bin/core_perl/"
-    searched_directories:
-      - "/usr/bin/gcc-ranlib-16.2"
-      - "/home/gopalkrishnajs/.local/share/mise/installs/codex/latest/bin/gcc-ranlib-16.2"
-      - "/home/gopalkrishnajs/.local/share/mise/installs/copilot/latest/gcc-ranlib-16.2"
-      - "/home/gopalkrishnajs/.local/share/mise/installs/gh/latest/gh_2.102.0_linux_amd64/bin/gcc-ranlib-16.2"
-      - "/home/gopalkrishnajs/.local/share/mise/installs/github-can1357-oh-my-pi/latest/gcc-ranlib-16.2"
-      - "/home/gopalkrishnajs/.local/share/mise/installs/go/1.27.1/bin/gcc-ranlib-16.2"
-      - "/home/gopalkrishnajs/.local/share/mise/installs/java/latest/bin/gcc-ranlib-16.2"
-      - "/home/gopalkrishnajs/.local/share/mise/installs/node/26.7.0/bin/gcc-ranlib-16.2"
-      - "/home/gopalkrishnajs/.local/share/mise/installs/opencode/latest/gcc-ranlib-16.2"
-      - "/home/gopalkrishnajs/.local/share/mise/installs/pi/latest/pi/gcc-ranlib-16.2"
-      - "/home/gopalkrishnajs/.local/share/mise/shims/gcc-ranlib-16.2"
-      - "/home/gopalkrishnajs/.local/bin/gcc-ranlib-16.2"
-      - "/usr/share/omarchy/bin/gcc-ranlib-16.2"
-      - "/home/gopalkrishnajs/.cargo/bin/gcc-ranlib-16.2"
-      - "/usr/local/sbin/gcc-ranlib-16.2"
-      - "/usr/local/bin/gcc-ranlib-16.2"
-      - "/usr/lib/jvm/default/bin/gcc-ranlib-16.2"
-      - "/usr/bin/site_perl/gcc-ranlib-16.2"
-      - "/usr/bin/vendor_perl/gcc-ranlib-16.2"
-      - "/usr/bin/core_perl/gcc-ranlib-16.2"
-      - "/usr/bin/gcc-ranlib-16"
-      - "/home/gopalkrishnajs/.local/share/mise/installs/codex/latest/bin/gcc-ranlib-16"
-      - "/home/gopalkrishnajs/.local/share/mise/installs/copilot/latest/gcc-ranlib-16"
-      - "/home/gopalkrishnajs/.local/share/mise/installs/gh/latest/gh_2.102.0_linux_amd64/bin/gcc-ranlib-16"
-      - "/home/gopalkrishnajs/.local/share/mise/installs/github-can1357-oh-my-pi/latest/gcc-ranlib-16"
-      - "/home/gopalkrishnajs/.local/share/mise/installs/go/1.27.1/bin/gcc-ranlib-16"
-      - "/home/gopalkrishnajs/.local/share/mise/installs/java/latest/bin/gcc-ranlib-16"
-      - "/home/gopalkrishnajs/.local/share/mise/installs/node/26.7.0/bin/gcc-ranlib-16"
-      - "/home/gopalkrishnajs/.local/share/mise/installs/opencode/latest/gcc-ranlib-16"
-      - "/home/gopalkrishnajs/.local/share/mise/installs/pi/latest/pi/gcc-ranlib-16"
-      - "/home/gopalkrishnajs/.local/share/mise/shims/gcc-ranlib-16"
-      - "/home/gopalkrishnajs/.local/bin/gcc-ranlib-16"
-      - "/usr/share/omarchy/bin/gcc-ranlib-16"
-      - "/home/gopalkrishnajs/.cargo/bin/gcc-ranlib-16"
-      - "/usr/local/sbin/gcc-ranlib-16"
-      - "/usr/local/bin/gcc-ranlib-16"
-      - "/usr/lib/jvm/default/bin/gcc-ranlib-16"
-      - "/usr/bin/site_perl/gcc-ranlib-16"
-      - "/usr/bin/vendor_perl/gcc-ranlib-16"
-      - "/usr/bin/core_perl/gcc-ranlib-16"
-      - "/usr/bin/gcc-ranlib16"
-      - "/home/gopalkrishnajs/.local/share/mise/installs/codex/latest/bin/gcc-ranlib16"
-      - "/home/gopalkrishnajs/.local/share/mise/installs/copilot/latest/gcc-ranlib16"
-      - "/home/gopalkrishnajs/.local/share/mise/installs/gh/latest/gh_2.102.0_linux_amd64/bin/gcc-ranlib16"
-      - "/home/gopalkrishnajs/.local/share/mise/installs/github-can1357-oh-my-pi/latest/gcc-ranlib16"
-      - "/home/gopalkrishnajs/.local/share/mise/installs/go/1.27.1/bin/gcc-ranlib16"
-      - "/home/gopalkrishnajs/.local/share/mise/installs/java/latest/bin/gcc-ranlib16"
-      - "/home/gopalkrishnajs/.local/share/mise/installs/node/26.7.0/bin/gcc-ranlib16"
-      - "/home/gopalkrishnajs/.local/share/mise/installs/opencode/latest/gcc-ranlib16"
-      - "/home/gopalkrishnajs/.local/share/mise/installs/pi/latest/pi/gcc-ranlib16"
-      - "/home/gopalkrishnajs/.local/share/mise/shims/gcc-ranlib16"
-      - "/home/gopalkrishnajs/.local/bin/gcc-ranlib16"
-      - "/usr/share/omarchy/bin/gcc-ranlib16"
-      - "/home/gopalkrishnajs/.cargo/bin/gcc-ranlib16"
-      - "/usr/local/sbin/gcc-ranlib16"
-      - "/usr/local/bin/gcc-ranlib16"
-      - "/usr/lib/jvm/default/bin/gcc-ranlib16"
-      - "/usr/bin/site_perl/gcc-ranlib16"
-      - "/usr/bin/vendor_perl/gcc-ranlib16"
-      - "/usr/bin/core_perl/gcc-ranlib16"
-    found: "/usr/bin/gcc-ranlib"
-    search_context:
-      ENV{PATH}:
-        - "/home/gopalkrishnajs/.local/share/mise/installs/codex/latest/bin"
-        - "/home/gopalkrishnajs/.local/share/mise/installs/copilot/latest"
-        - "/home/gopalkrishnajs/.local/share/mise/installs/gh/latest/gh_2.102.0_linux_amd64/bin"
-        - "/home/gopalkrishnajs/.local/share/mise/installs/github-can1357-oh-my-pi/latest"
-        - "/home/gopalkrishnajs/.local/share/mise/installs/go/1.27.1/bin"
-        - "/home/gopalkrishnajs/.local/share/mise/installs/java/latest/bin"
-        - "/home/gopalkrishnajs/.local/share/mise/installs/node/26.7.0/bin"
-        - "/home/gopalkrishnajs/.local/share/mise/installs/opencode/latest"
-        - "/home/gopalkrishnajs/.local/share/mise/installs/pi/latest/pi"
-        - "/home/gopalkrishnajs/.local/share/mise/shims"
-        - "/home/gopalkrishnajs/.local/bin"
-        - "/usr/share/omarchy/bin"
-        - "/home/gopalkrishnajs/.local/bin"
-        - "/home/gopalkrishnajs/.local/bin"
-        - "/home/gopalkrishnajs/.cargo/bin"
-        - "/usr/local/sbin"
-        - "/usr/local/bin"
-        - "/usr/bin"
-        - "/home/gopalkrishnajs/.local/bin"
-        - "/usr/lib/jvm/default/bin"
-        - "/usr/bin/site_perl"
-        - "/usr/bin/vendor_perl"
-        - "/usr/bin/core_perl"
-  -
-    kind: "find-v1"
-    backtrace:
-      - "/usr/share/cmake/Modules/CMakeDetermineCompiler.cmake:54 (find_program)"
-      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:69 (_cmake_find_compiler)"
-      - "CMakeLists.txt"
-    mode: "program"
-    variable: "CMAKE_CXX_COMPILER"
-    description: "CXX compiler"
-    settings:
-      SearchFramework: "NEVER"
-      SearchAppBundle: "NEVER"
-      CMAKE_FIND_USE_CMAKE_PATH: true
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "c++"
-      - "CC"
-      - "g++"
-      - "aCC"
-      - "cl"
-      - "bcc"
-      - "xlC"
-      - "icpx"
-      - "icx"
-      - "clang++"
-    candidate_directories:
-      - "/usr/bin/"
-    found: "/usr/bin/c++"
-    search_context:
-      ENV{PATH}:
-        - "/home/gopalkrishnajs/.local/share/mise/installs/codex/latest/bin"
-        - "/home/gopalkrishnajs/.local/share/mise/installs/copilot/latest"
-        - "/home/gopalkrishnajs/.local/share/mise/installs/gh/latest/gh_2.102.0_linux_amd64/bin"
-        - "/home/gopalkrishnajs/.local/share/mise/installs/github-can1357-oh-my-pi/latest"
-        - "/home/gopalkrishnajs/.local/share/mise/installs/go/1.27.1/bin"
-        - "/home/gopalkrishnajs/.local/share/mise/installs/java/latest/bin"
-        - "/home/gopalkrishnajs/.local/share/mise/installs/node/26.7.0/bin"
-        - "/home/gopalkrishnajs/.local/share/mise/installs/opencode/latest"
-        - "/home/gopalkrishnajs/.local/share/mise/installs/pi/latest/pi"
-        - "/home/gopalkrishnajs/.local/share/mise/shims"
-        - "/home/gopalkrishnajs/.local/bin"
-        - "/usr/share/omarchy/bin"
-        - "/home/gopalkrishnajs/.local/bin"
-        - "/home/gopalkrishnajs/.local/bin"
-        - "/home/gopalkrishnajs/.cargo/bin"
-        - "/usr/local/sbin"
-        - "/usr/local/bin"
-        - "/usr/bin"
-        - "/home/gopalkrishnajs/.local/bin"
-        - "/usr/lib/jvm/default/bin"
-        - "/usr/bin/site_perl"
-        - "/usr/bin/vendor_perl"
-        - "/usr/bin/core_perl"
-  -
-    kind: "find-v1"
-    backtrace:
-      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:501 (find_file)"
-      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:538 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
-      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
-      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt"
-    mode: "file"
-    variable: "src_in"
-    description: "Path to a file."
-    settings:
-      SearchFramework: "NEVER"
-      SearchAppBundle: "NEVER"
-      CMAKE_FIND_USE_CMAKE_PATH: true
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "CMakeCXXCompilerId.cpp.in"
-    candidate_directories:
-      - "/usr/share/cmake/Modules/"
-    found: "/usr/share/cmake/Modules/CMakeCXXCompilerId.cpp.in"
-    search_context:
-      ENV{PATH}:
-        - "/home/gopalkrishnajs/.local/share/mise/installs/codex/latest/bin"
-        - "/home/gopalkrishnajs/.local/share/mise/installs/copilot/latest"
-        - "/home/gopalkrishnajs/.local/share/mise/installs/gh/latest/gh_2.102.0_linux_amd64/bin"
-        - "/home/gopalkrishnajs/.local/share/mise/installs/github-can1357-oh-my-pi/latest"
-        - "/home/gopalkrishnajs/.local/share/mise/installs/go/1.27.1/bin"
-        - "/home/gopalkrishnajs/.local/share/mise/installs/java/latest/bin"
-        - "/home/gopalkrishnajs/.local/share/mise/installs/node/26.7.0/bin"
-        - "/home/gopalkrishnajs/.local/share/mise/installs/opencode/latest"
-        - "/home/gopalkrishnajs/.local/share/mise/installs/pi/latest/pi"
-        - "/home/gopalkrishnajs/.local/share/mise/shims"
-        - "/home/gopalkrishnajs/.local/bin"
-        - "/usr/share/omarchy/bin"
-        - "/home/gopalkrishnajs/.local/bin"
-        - "/home/gopalkrishnajs/.local/bin"
-        - "/home/gopalkrishnajs/.cargo/bin"
-        - "/usr/local/sbin"
-        - "/usr/local/bin"
-        - "/usr/bin"
-        - "/home/gopalkrishnajs/.local/bin"
-        - "/usr/lib/jvm/default/bin"
-        - "/usr/bin/site_perl"
-        - "/usr/bin/vendor_perl"
-        - "/usr/bin/core_perl"
-  -
-    kind: "message-v1"
-    backtrace:
-      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
-      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt"
-    message: |
-      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
-      Compiler: /usr/bin/c++ 
-      Build flags: 
-      Id flags:  
-      
-      The output was:
-      0
-      
-      
-      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
-      
-      The CXX compiler identification is GNU, found in:
-        /home/gopalkrishnajs/Projects/cpp-hft-engine/build/CMakeFiles/4.4.3/CompilerIdCXX/a.out
-      
+        - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
   -
     kind: "find-v1"
     backtrace:
       - "/usr/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake:18 (find_program)"
       - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
-      - "CMakeLists.txt"
+      - "CMakeLists.txt:4 (project)"
     mode: "program"
     variable: "CMAKE_CXX_COMPILER_AR"
     description: "A wrapper around 'ar' adding the appropriate '--plugin' option for the GCC compiler"
@@ -1563,6 +1255,8 @@ events:
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
+      - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
     searched_directories:
       - "/usr/bin/gcc-ar-16.2"
       - "/home/gopalkrishnajs/.local/share/mise/installs/codex/latest/bin/gcc-ar-16.2"
@@ -1584,6 +1278,8 @@ events:
       - "/usr/bin/site_perl/gcc-ar-16.2"
       - "/usr/bin/vendor_perl/gcc-ar-16.2"
       - "/usr/bin/core_perl/gcc-ar-16.2"
+      - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar-16.2"
+      - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ar-16.2"
       - "/usr/bin/gcc-ar-16"
       - "/home/gopalkrishnajs/.local/share/mise/installs/codex/latest/bin/gcc-ar-16"
       - "/home/gopalkrishnajs/.local/share/mise/installs/copilot/latest/gcc-ar-16"
@@ -1604,6 +1300,8 @@ events:
       - "/usr/bin/site_perl/gcc-ar-16"
       - "/usr/bin/vendor_perl/gcc-ar-16"
       - "/usr/bin/core_perl/gcc-ar-16"
+      - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar-16"
+      - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ar-16"
       - "/usr/bin/gcc-ar16"
       - "/home/gopalkrishnajs/.local/share/mise/installs/codex/latest/bin/gcc-ar16"
       - "/home/gopalkrishnajs/.local/share/mise/installs/copilot/latest/gcc-ar16"
@@ -1624,6 +1322,8 @@ events:
       - "/usr/bin/site_perl/gcc-ar16"
       - "/usr/bin/vendor_perl/gcc-ar16"
       - "/usr/bin/core_perl/gcc-ar16"
+      - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar16"
+      - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ar16"
     found: "/usr/bin/gcc-ar"
     search_context:
       ENV{PATH}:
@@ -1638,6 +1338,7 @@ events:
         - "/home/gopalkrishnajs/.local/share/mise/installs/pi/latest/pi"
         - "/home/gopalkrishnajs/.local/share/mise/shims"
         - "/home/gopalkrishnajs/.local/bin"
+        - "/home/gopalkrishnajs/.local/bin"
         - "/usr/share/omarchy/bin"
         - "/home/gopalkrishnajs/.local/bin"
         - "/home/gopalkrishnajs/.local/bin"
@@ -1650,12 +1351,14 @@ events:
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
+        - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
   -
     kind: "find-v1"
     backtrace:
       - "/usr/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake:30 (find_program)"
       - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
-      - "CMakeLists.txt"
+      - "CMakeLists.txt:4 (project)"
     mode: "program"
     variable: "CMAKE_CXX_COMPILER_RANLIB"
     description: "A wrapper around 'ranlib' adding the appropriate '--plugin' option for the GCC compiler"
@@ -1693,6 +1396,8 @@ events:
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
+      - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
     searched_directories:
       - "/usr/bin/gcc-ranlib-16.2"
       - "/home/gopalkrishnajs/.local/share/mise/installs/codex/latest/bin/gcc-ranlib-16.2"
@@ -1714,6 +1419,8 @@ events:
       - "/usr/bin/site_perl/gcc-ranlib-16.2"
       - "/usr/bin/vendor_perl/gcc-ranlib-16.2"
       - "/usr/bin/core_perl/gcc-ranlib-16.2"
+      - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib-16.2"
+      - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ranlib-16.2"
       - "/usr/bin/gcc-ranlib-16"
       - "/home/gopalkrishnajs/.local/share/mise/installs/codex/latest/bin/gcc-ranlib-16"
       - "/home/gopalkrishnajs/.local/share/mise/installs/copilot/latest/gcc-ranlib-16"
@@ -1734,6 +1441,8 @@ events:
       - "/usr/bin/site_perl/gcc-ranlib-16"
       - "/usr/bin/vendor_perl/gcc-ranlib-16"
       - "/usr/bin/core_perl/gcc-ranlib-16"
+      - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib-16"
+      - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ranlib-16"
       - "/usr/bin/gcc-ranlib16"
       - "/home/gopalkrishnajs/.local/share/mise/installs/codex/latest/bin/gcc-ranlib16"
       - "/home/gopalkrishnajs/.local/share/mise/installs/copilot/latest/gcc-ranlib16"
@@ -1754,6 +1463,8 @@ events:
       - "/usr/bin/site_perl/gcc-ranlib16"
       - "/usr/bin/vendor_perl/gcc-ranlib16"
       - "/usr/bin/core_perl/gcc-ranlib16"
+      - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib16"
+      - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ranlib16"
     found: "/usr/bin/gcc-ranlib"
     search_context:
       ENV{PATH}:
@@ -1768,6 +1479,7 @@ events:
         - "/home/gopalkrishnajs/.local/share/mise/installs/pi/latest/pi"
         - "/home/gopalkrishnajs/.local/share/mise/shims"
         - "/home/gopalkrishnajs/.local/bin"
+        - "/home/gopalkrishnajs/.local/bin"
         - "/usr/share/omarchy/bin"
         - "/home/gopalkrishnajs/.local/bin"
         - "/home/gopalkrishnajs/.local/bin"
@@ -1780,236 +1492,22 @@ events:
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:123 (try_compile)"
-      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt"
-    checks:
-      - "Detecting C compiler ABI info"
-    directories:
-      source: "/home/gopalkrishnajs/Projects/cpp-hft-engine/build/CMakeFiles/CMakeScratch/TryCompile-vJzdkt"
-      binary: "/home/gopalkrishnajs/Projects/cpp-hft-engine/build/CMakeFiles/CMakeScratch/TryCompile-vJzdkt"
-    cmakeVariables:
-      CMAKE_CXX_STDLIB_MODULES_JSON: ""
-      CMAKE_C_FLAGS: ""
-      CMAKE_EXE_LINKER_FLAGS: ""
-    buildResult:
-      variable: "CMAKE_C_ABI_COMPILED"
-      cached: false
-      stdout: |
-        Change Dir: '/home/gopalkrishnajs/Projects/cpp-hft-engine/build/CMakeFiles/CMakeScratch/TryCompile-vJzdkt'
-        
-        Run Build Command(s): /usr/bin/ninja -v cmTC_0a1c9
-        [1/2] /usr/bin/cc   -v -o CMakeFiles/cmTC_0a1c9.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
-        Using built-in specs.
-        COLLECT_GCC=/usr/bin/cc
-        Target: x86_64-pc-linux-gnu
-        Configured with: ../gcc/configure --enable-languages=ada,c,c++,d,fortran,go,lto,m2,objc,obj-c++,rust,cobol --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://gitlab.archlinux.org/archlinux/packaging/packages/gcc/-/issues --with-build-config=bootstrap-lto --with-gcc-major-version-only --with-linker-hash-style=gnu --with-system-zlib --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-fixincludes --disable-libssp --disable-libstdcxx-pch --disable-werror
-        Thread model: posix
-        Supported LTO compression algorithms: zlib zstd
-        gcc version 16.2.1 20260810 (GCC) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_0a1c9.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_0a1c9.dir/'
-         /usr/lib/gcc/x86_64-pc-linux-gnu/16/cc1 -quiet -v /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_0a1c9.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/ccvlS2UD.s
-        GNU C23 (GCC) version 16.2.1 20260810 (x86_64-pc-linux-gnu)
-        	compiled by GNU C version 16.2.1 20260810, GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.4.1, isl version isl-0.28-GMP
-        
-        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-        ignoring nonexistent directory "/usr/lib/gcc/x86_64-pc-linux-gnu/16/include-fixed"
-        ignoring nonexistent directory "/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../x86_64-pc-linux-gnu/include"
-        #include "..." search starts here:
-        #include <...> search starts here:
-         /usr/lib/gcc/x86_64-pc-linux-gnu/16/include
-         /usr/local/include
-         /usr/include
-        End of search list.
-        Compiler executable checksum: f931fde8682f21d1ebcf65f6b881e532
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_0a1c9.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_0a1c9.dir/'
-         as -v --64 -o CMakeFiles/cmTC_0a1c9.dir/CMakeCCompilerABI.c.o /tmp/ccvlS2UD.s
-        GNU assembler version 2.47 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.47
-        COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/
-        LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_0a1c9.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_0a1c9.dir/CMakeCCompilerABI.c.'
-        [2/2] : && /usr/bin/cc  -v -Wl,-v CMakeFiles/cmTC_0a1c9.dir/CMakeCCompilerABI.c.o -o cmTC_0a1c9   && :
-        Using built-in specs.
-        COLLECT_GCC=/usr/bin/cc
-        COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper
-        Target: x86_64-pc-linux-gnu
-        Configured with: ../gcc/configure --enable-languages=ada,c,c++,d,fortran,go,lto,m2,objc,obj-c++,rust,cobol --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://gitlab.archlinux.org/archlinux/packaging/packages/gcc/-/issues --with-build-config=bootstrap-lto --with-gcc-major-version-only --with-linker-hash-style=gnu --with-system-zlib --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-fixincludes --disable-libssp --disable-libstdcxx-pch --disable-werror
-        Thread model: posix
-        Supported LTO compression algorithms: zlib zstd
-        gcc version 16.2.1 20260810 (GCC) 
-        COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/
-        LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_0a1c9' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_0a1c9.'
-         /usr/lib/gcc/x86_64-pc-linux-gnu/16/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/tmp/ccuv0VzX.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_0a1c9 /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_0a1c9.dir/CMakeCCompilerABI.c.o -lgcc -lgcc_s_asneeded -latomic_asneeded -lc -lgcc -lgcc_s_asneeded /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o
-        collect2 version 16.2.1 20260810
-        /usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/tmp/ccuv0VzX.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_0a1c9 /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_0a1c9.dir/CMakeCCompilerABI.c.o -lgcc -lgcc_s_asneeded -latomic_asneeded -lc -lgcc -lgcc_s_asneeded /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o
-        GNU ld (GNU Binutils) 2.47
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_0a1c9' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_0a1c9.'
-        
-      exitCode: 0
-  -
-    kind: "message-v1"
-    backtrace:
-      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:255 (message)"
-      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt"
-    message: |
-      Parsed C implicit include dir info: rv=done
-        found start of include info
-        found start of implicit include info
-          add: [/usr/lib/gcc/x86_64-pc-linux-gnu/16/include]
-          add: [/usr/local/include]
-          add: [/usr/include]
-        end of search list found
-        collapse include dir [/usr/lib/gcc/x86_64-pc-linux-gnu/16/include] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/16/include]
-        collapse include dir [/usr/local/include] ==> [/usr/local/include]
-        collapse include dir [/usr/include] ==> [/usr/include]
-        implicit include dirs: [/usr/lib/gcc/x86_64-pc-linux-gnu/16/include;/usr/local/include;/usr/include]
-      
-      
-  -
-    kind: "message-v1"
-    backtrace:
-      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:291 (message)"
-      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt"
-    message: |
-      Parsed C implicit link information:
-        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|wild|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|wild))("|,| |$)]
-        ignore line: [Change Dir: '/home/gopalkrishnajs/Projects/cpp-hft-engine/build/CMakeFiles/CMakeScratch/TryCompile-vJzdkt']
-        ignore line: []
-        ignore line: [Run Build Command(s): /usr/bin/ninja -v cmTC_0a1c9]
-        ignore line: [[1/2] /usr/bin/cc   -v -o CMakeFiles/cmTC_0a1c9.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
-        ignore line: [Using built-in specs.]
-        ignore line: [COLLECT_GCC=/usr/bin/cc]
-        ignore line: [Target: x86_64-pc-linux-gnu]
-        ignore line: [Configured with: ../gcc/configure --enable-languages=ada c c++ d fortran go lto m2 objc obj-c++ rust cobol --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://gitlab.archlinux.org/archlinux/packaging/packages/gcc/-/issues --with-build-config=bootstrap-lto --with-gcc-major-version-only --with-linker-hash-style=gnu --with-system-zlib --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-fixincludes --disable-libssp --disable-libstdcxx-pch --disable-werror]
-        ignore line: [Thread model: posix]
-        ignore line: [Supported LTO compression algorithms: zlib zstd]
-        ignore line: [gcc version 16.2.1 20260810 (GCC) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_0a1c9.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_0a1c9.dir/']
-        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/16/cc1 -quiet -v /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_0a1c9.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/ccvlS2UD.s]
-        ignore line: [GNU C23 (GCC) version 16.2.1 20260810 (x86_64-pc-linux-gnu)]
-        ignore line: [	compiled by GNU C version 16.2.1 20260810  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.4.1  isl version isl-0.28-GMP]
-        ignore line: []
-        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
-        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-pc-linux-gnu/16/include-fixed"]
-        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../x86_64-pc-linux-gnu/include"]
-        ignore line: [#include "..." search starts here:]
-        ignore line: [#include <...> search starts here:]
-        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include]
-        ignore line: [ /usr/local/include]
-        ignore line: [ /usr/include]
-        ignore line: [End of search list.]
-        ignore line: [Compiler executable checksum: f931fde8682f21d1ebcf65f6b881e532]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_0a1c9.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_0a1c9.dir/']
-        ignore line: [ as -v --64 -o CMakeFiles/cmTC_0a1c9.dir/CMakeCCompilerABI.c.o /tmp/ccvlS2UD.s]
-        ignore line: [GNU assembler version 2.47 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.47]
-        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
-        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_0a1c9.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_0a1c9.dir/CMakeCCompilerABI.c.']
-        ignore line: [[2/2] : && /usr/bin/cc  -v -Wl -v CMakeFiles/cmTC_0a1c9.dir/CMakeCCompilerABI.c.o -o cmTC_0a1c9   && :]
-        ignore line: [Using built-in specs.]
-        ignore line: [COLLECT_GCC=/usr/bin/cc]
-        ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper]
-        ignore line: [Target: x86_64-pc-linux-gnu]
-        ignore line: [Configured with: ../gcc/configure --enable-languages=ada c c++ d fortran go lto m2 objc obj-c++ rust cobol --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://gitlab.archlinux.org/archlinux/packaging/packages/gcc/-/issues --with-build-config=bootstrap-lto --with-gcc-major-version-only --with-linker-hash-style=gnu --with-system-zlib --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-fixincludes --disable-libssp --disable-libstdcxx-pch --disable-werror]
-        ignore line: [Thread model: posix]
-        ignore line: [Supported LTO compression algorithms: zlib zstd]
-        ignore line: [gcc version 16.2.1 20260810 (GCC) ]
-        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
-        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_0a1c9' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_0a1c9.']
-        link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/16/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/tmp/ccuv0VzX.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_0a1c9 /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_0a1c9.dir/CMakeCCompilerABI.c.o -lgcc -lgcc_s_asneeded -latomic_asneeded -lc -lgcc -lgcc_s_asneeded /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o]
-          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/16/collect2] ==> ignore
-          arg [-plugin] ==> ignore
-          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so] ==> ignore
-          arg [-plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/ccuv0VzX.res] ==> ignore
-          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
-          arg [-plugin-opt=-pass-through=-lgcc_s_asneeded] ==> ignore
-          arg [-plugin-opt=-pass-through=-latomic_asneeded] ==> ignore
-          arg [-plugin-opt=-pass-through=-lc] ==> ignore
-          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
-          arg [-plugin-opt=-pass-through=-lgcc_s_asneeded] ==> ignore
-          arg [--build-id] ==> ignore
-          arg [--eh-frame-hdr] ==> ignore
-          arg [--hash-style=gnu] ==> ignore
-          arg [-m] ==> ignore
-          arg [elf_x86_64] ==> ignore
-          arg [-dynamic-linker] ==> ignore
-          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
-          arg [-pie] ==> ignore
-          arg [-o] ==> ignore
-          arg [cmTC_0a1c9] ==> ignore
-          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o]
-          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o]
-          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o]
-          arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/16] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/16]
-          arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib]
-          arg [-L/lib/../lib] ==> dir [/lib/../lib]
-          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
-          arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../..] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../..]
-          arg [-L/lib] ==> dir [/lib]
-          arg [-L/usr/lib] ==> dir [/usr/lib]
-          arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_0a1c9.dir/CMakeCCompilerABI.c.o] ==> ignore
-          arg [-lgcc] ==> lib [gcc]
-          arg [-lgcc_s_asneeded] ==> lib [gcc_s_asneeded]
-          arg [-latomic_asneeded] ==> lib [atomic_asneeded]
-          arg [-lc] ==> lib [c]
-          arg [-lgcc] ==> lib [gcc]
-          arg [-lgcc_s_asneeded] ==> lib [gcc_s_asneeded]
-          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o]
-          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o]
-        ignore line: [collect2 version 16.2.1 20260810]
-        link line: [/usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/tmp/ccuv0VzX.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_0a1c9 /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_0a1c9.dir/CMakeCCompilerABI.c.o -lgcc -lgcc_s_asneeded -latomic_asneeded -lc -lgcc -lgcc_s_asneeded /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o] ==> linker [/usr/bin/ld]
-        link line: [/usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/tmp/ccuv0VzX.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_0a1c9 /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_0a1c9.dir/CMakeCCompilerABI.c.o -lgcc -lgcc_s_asneeded -latomic_asneeded -lc -lgcc -lgcc_s_asneeded /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o] ==> linker architecture flags [-m;elf]
-        ignore line: [/usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/tmp/ccuv0VzX.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_0a1c9 /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_0a1c9.dir/CMakeCCompilerABI.c.o -lgcc -lgcc_s_asneeded -latomic_asneeded -lc -lgcc -lgcc_s_asneeded /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o]
-        linker tool for 'C': /usr/bin/ld -m;elf
-        collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o] ==> [/usr/lib/Scrt1.o]
-        collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o] ==> [/usr/lib/crti.o]
-        collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o] ==> [/usr/lib/crtn.o]
-        collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/16] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/16]
-        collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib] ==> [/usr/lib]
-        collapse library dir [/lib/../lib] ==> [/lib]
-        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
-        collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../..] ==> [/usr/lib]
-        collapse library dir [/lib] ==> [/lib]
-        collapse library dir [/usr/lib] ==> [/usr/lib]
-        implicit libs: [gcc;gcc_s_asneeded;atomic_asneeded;c;gcc;gcc_s_asneeded]
-        implicit objs: [/usr/lib/Scrt1.o;/usr/lib/crti.o;/usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o;/usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o;/usr/lib/crtn.o]
-        implicit dirs: [/usr/lib/gcc/x86_64-pc-linux-gnu/16;/usr/lib;/lib]
-        implicit fwks: []
-      
-      
-  -
-    kind: "message-v1"
-    backtrace:
-      - "/usr/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake:41 (message)"
-      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:337 (cmake_determine_linker_id)"
-      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt"
-    message: |
-      Running the C compiler's linker: "/usr/bin/ld" "-v"
-      GNU ld (GNU Binutils) 2.47
+        - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
   -
     kind: "try_compile-v1"
     backtrace:
       - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:123 (try_compile)"
       - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt"
+      - "CMakeLists.txt:4 (project)"
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/home/gopalkrishnajs/Projects/cpp-hft-engine/build/CMakeFiles/CMakeScratch/TryCompile-LwsCfY"
-      binary: "/home/gopalkrishnajs/Projects/cpp-hft-engine/build/CMakeFiles/CMakeScratch/TryCompile-LwsCfY"
+      source: "/home/gopalkrishnajs/Projects/cpp-hft-engine/build/CMakeFiles/CMakeScratch/TryCompile-pGPSfP"
+      binary: "/home/gopalkrishnajs/Projects/cpp-hft-engine/build/CMakeFiles/CMakeScratch/TryCompile-pGPSfP"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
       CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
       CMAKE_CXX_STDLIB_MODULES_JSON: ""
       CMAKE_EXE_LINKER_FLAGS: ""
@@ -2017,10 +1515,10 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: false
       stdout: |
-        Change Dir: '/home/gopalkrishnajs/Projects/cpp-hft-engine/build/CMakeFiles/CMakeScratch/TryCompile-LwsCfY'
+        Change Dir: '/home/gopalkrishnajs/Projects/cpp-hft-engine/build/CMakeFiles/CMakeScratch/TryCompile-pGPSfP'
         
-        Run Build Command(s): /usr/bin/ninja -v cmTC_ea7e1
-        [1/2] /usr/bin/c++   -v -o CMakeFiles/cmTC_ea7e1.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s): /usr/bin/ninja -v cmTC_b19ec
+        [1/2] /usr/bin/c++   -v -o CMakeFiles/cmTC_b19ec.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
         Using built-in specs.
         COLLECT_GCC=/usr/bin/c++
         Target: x86_64-pc-linux-gnu
@@ -2028,8 +1526,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 16.2.1 20260810 (GCC) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ea7e1.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_ea7e1.dir/'
-         /usr/lib/gcc/x86_64-pc-linux-gnu/16/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_ea7e1.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccEUtRJ7.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b19ec.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b19ec.dir/'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/16/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_b19ec.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/cc8oftb6.s
         GNU C++20 (GCC) version 16.2.1 20260810 (x86_64-pc-linux-gnu)
         	compiled by GNU C version 16.2.1 20260810, GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.4.1, isl version isl-0.28-GMP
         
@@ -2046,13 +1544,13 @@ events:
          /usr/include
         End of search list.
         Compiler executable checksum: 4e9ac8b201f4ca740be09d0c7a39f82f
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ea7e1.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_ea7e1.dir/'
-         as -v --64 -o CMakeFiles/cmTC_ea7e1.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccEUtRJ7.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b19ec.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b19ec.dir/'
+         as -v --64 -o CMakeFiles/cmTC_b19ec.dir/CMakeCXXCompilerABI.cpp.o /tmp/cc8oftb6.s
         GNU assembler version 2.47 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.47
         COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ea7e1.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_ea7e1.dir/CMakeCXXCompilerABI.cpp.'
-        [2/2] : && /usr/bin/c++  -v -Wl,-v CMakeFiles/cmTC_ea7e1.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_ea7e1   && :
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b19ec.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b19ec.dir/CMakeCXXCompilerABI.cpp.'
+        [2/2] : && /usr/bin/c++  -v -Wl,-v CMakeFiles/cmTC_b19ec.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_b19ec   && :
         Using built-in specs.
         COLLECT_GCC=/usr/bin/c++
         COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper
@@ -2063,12 +1561,12 @@ events:
         gcc version 16.2.1 20260810 (GCC) 
         COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_ea7e1' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_ea7e1.'
-         /usr/lib/gcc/x86_64-pc-linux-gnu/16/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/tmp/ccGk35QW.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_ea7e1 /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_ea7e1.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -latomic_asneeded -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_b19ec' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_b19ec.'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/16/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/tmp/ccPgg9Nh.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_b19ec /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_b19ec.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -latomic_asneeded -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o
         collect2 version 16.2.1 20260810
-        /usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/tmp/ccGk35QW.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_ea7e1 /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_ea7e1.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -latomic_asneeded -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o
+        /usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/tmp/ccPgg9Nh.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_b19ec /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_b19ec.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -latomic_asneeded -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o
         GNU ld (GNU Binutils) 2.47
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_ea7e1' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_ea7e1.'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_b19ec' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_b19ec.'
         
       exitCode: 0
   -
@@ -2076,7 +1574,7 @@ events:
     backtrace:
       - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:255 (message)"
       - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt"
+      - "CMakeLists.txt:4 (project)"
     message: |
       Parsed CXX implicit include dir info: rv=done
         found start of include info
@@ -2102,15 +1600,15 @@ events:
     backtrace:
       - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:291 (message)"
       - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt"
+      - "CMakeLists.txt:4 (project)"
     message: |
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|wild|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|wild))("|,| |$)]
-        ignore line: [Change Dir: '/home/gopalkrishnajs/Projects/cpp-hft-engine/build/CMakeFiles/CMakeScratch/TryCompile-LwsCfY']
+        ignore line: [Change Dir: '/home/gopalkrishnajs/Projects/cpp-hft-engine/build/CMakeFiles/CMakeScratch/TryCompile-pGPSfP']
         ignore line: []
-        ignore line: [Run Build Command(s): /usr/bin/ninja -v cmTC_ea7e1]
-        ignore line: [[1/2] /usr/bin/c++   -v -o CMakeFiles/cmTC_ea7e1.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): /usr/bin/ninja -v cmTC_b19ec]
+        ignore line: [[1/2] /usr/bin/c++   -v -o CMakeFiles/cmTC_b19ec.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/c++]
         ignore line: [Target: x86_64-pc-linux-gnu]
@@ -2118,8 +1616,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 16.2.1 20260810 (GCC) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ea7e1.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_ea7e1.dir/']
-        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/16/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_ea7e1.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccEUtRJ7.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b19ec.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b19ec.dir/']
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/16/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_b19ec.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/cc8oftb6.s]
         ignore line: [GNU C++20 (GCC) version 16.2.1 20260810 (x86_64-pc-linux-gnu)]
         ignore line: [	compiled by GNU C version 16.2.1 20260810  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.4.1  isl version isl-0.28-GMP]
         ignore line: []
@@ -2136,13 +1634,13 @@ events:
         ignore line: [ /usr/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: 4e9ac8b201f4ca740be09d0c7a39f82f]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ea7e1.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_ea7e1.dir/']
-        ignore line: [ as -v --64 -o CMakeFiles/cmTC_ea7e1.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccEUtRJ7.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b19ec.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b19ec.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_b19ec.dir/CMakeCXXCompilerABI.cpp.o /tmp/cc8oftb6.s]
         ignore line: [GNU assembler version 2.47 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.47]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ea7e1.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_ea7e1.dir/CMakeCXXCompilerABI.cpp.']
-        ignore line: [[2/2] : && /usr/bin/c++  -v -Wl -v CMakeFiles/cmTC_ea7e1.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_ea7e1   && :]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b19ec.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b19ec.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [[2/2] : && /usr/bin/c++  -v -Wl -v CMakeFiles/cmTC_b19ec.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_b19ec   && :]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/c++]
         ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper]
@@ -2153,13 +1651,13 @@ events:
         ignore line: [gcc version 16.2.1 20260810 (GCC) ]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_ea7e1' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_ea7e1.']
-        link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/16/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/tmp/ccGk35QW.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_ea7e1 /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_ea7e1.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -latomic_asneeded -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_b19ec' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_b19ec.']
+        link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/16/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/tmp/ccPgg9Nh.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_b19ec /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_b19ec.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -latomic_asneeded -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o]
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/16/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/ccGk35QW.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccPgg9Nh.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-latomic_asneeded] ==> ignore
@@ -2175,7 +1673,7 @@ events:
           arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
           arg [-pie] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_ea7e1] ==> ignore
+          arg [cmTC_b19ec] ==> ignore
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o]
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o]
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o]
@@ -2187,7 +1685,7 @@ events:
           arg [-L/lib] ==> dir [/lib]
           arg [-L/usr/lib] ==> dir [/usr/lib]
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_ea7e1.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [CMakeFiles/cmTC_b19ec.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
           arg [-lstdc++] ==> lib [stdc++]
           arg [-lm] ==> lib [m]
           arg [-lgcc_s] ==> lib [gcc_s]
@@ -2199,9 +1697,9 @@ events:
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o]
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o]
         ignore line: [collect2 version 16.2.1 20260810]
-        link line: [/usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/tmp/ccGk35QW.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_ea7e1 /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_ea7e1.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -latomic_asneeded -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o] ==> linker [/usr/bin/ld]
-        link line: [/usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/tmp/ccGk35QW.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_ea7e1 /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_ea7e1.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -latomic_asneeded -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o] ==> linker architecture flags [-m;elf]
-        ignore line: [/usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/tmp/ccGk35QW.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_ea7e1 /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_ea7e1.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -latomic_asneeded -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o]
+        link line: [/usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/tmp/ccPgg9Nh.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_b19ec /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_b19ec.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -latomic_asneeded -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o] ==> linker [/usr/bin/ld]
+        link line: [/usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/tmp/ccPgg9Nh.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_b19ec /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_b19ec.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -latomic_asneeded -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o] ==> linker architecture flags [-m;elf]
+        ignore line: [/usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/tmp/ccPgg9Nh.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_b19ec /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_b19ec.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -latomic_asneeded -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o]
         linker tool for 'CXX': /usr/bin/ld -m;elf
         collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o] ==> [/usr/lib/Scrt1.o]
         collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o] ==> [/usr/lib/crti.o]
@@ -2225,8 +1723,571 @@ events:
       - "/usr/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake:41 (message)"
       - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:337 (cmake_determine_linker_id)"
       - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt"
+      - "CMakeLists.txt:4 (project)"
     message: |
       Running the CXX compiler's linker: "/usr/bin/ld" "-v"
       GNU ld (GNU Binutils) 2.47
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CTest.cmake:171 (find_program)"
+      - "CMakeLists.txt:35 (include)"
+    mode: "program"
+    variable: "GITCOMMAND"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "git"
+    candidate_directories:
+      - "/home/gopalkrishnajs/.local/share/mise/installs/codex/latest/bin/"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/copilot/latest/"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/gh/latest/gh_2.102.0_linux_amd64/bin/"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/github-can1357-oh-my-pi/latest/"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/go/1.27.1/bin/"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/java/latest/bin/"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/node/26.7.0/bin/"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/opencode/latest/"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/pi/latest/pi/"
+      - "/home/gopalkrishnajs/.local/share/mise/shims/"
+      - "/home/gopalkrishnajs/.local/bin/"
+      - "/usr/share/omarchy/bin/"
+      - "/home/gopalkrishnajs/.cargo/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/usr/local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/"
+      - "/usr/bin/"
+      - "/usr/sbin/"
+      - "/usr/"
+      - "/bin/"
+      - "/sbin/"
+      - "/usr/X11R6/bin/"
+      - "/usr/X11R6/sbin/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/bin/"
+      - "/usr/pkg/sbin/"
+      - "/usr/pkg/"
+      - "/opt/bin/"
+      - "/opt/sbin/"
+      - "/opt/"
+    searched_directories:
+      - "/home/gopalkrishnajs/.local/share/mise/installs/codex/latest/bin/git"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/copilot/latest/git"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/gh/latest/gh_2.102.0_linux_amd64/bin/git"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/github-can1357-oh-my-pi/latest/git"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/go/1.27.1/bin/git"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/java/latest/bin/git"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/node/26.7.0/bin/git"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/opencode/latest/git"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/pi/latest/pi/git"
+      - "/home/gopalkrishnajs/.local/share/mise/shims/git"
+      - "/home/gopalkrishnajs/.local/bin/git"
+      - "/usr/share/omarchy/bin/git"
+      - "/home/gopalkrishnajs/.cargo/bin/git"
+      - "/usr/local/sbin/git"
+      - "/usr/local/bin/git"
+    found: "/usr/bin/git"
+    search_context:
+      ENV{PATH}:
+        - "/home/gopalkrishnajs/.local/share/mise/installs/codex/latest/bin"
+        - "/home/gopalkrishnajs/.local/share/mise/installs/copilot/latest"
+        - "/home/gopalkrishnajs/.local/share/mise/installs/gh/latest/gh_2.102.0_linux_amd64/bin"
+        - "/home/gopalkrishnajs/.local/share/mise/installs/github-can1357-oh-my-pi/latest"
+        - "/home/gopalkrishnajs/.local/share/mise/installs/go/1.27.1/bin"
+        - "/home/gopalkrishnajs/.local/share/mise/installs/java/latest/bin"
+        - "/home/gopalkrishnajs/.local/share/mise/installs/node/26.7.0/bin"
+        - "/home/gopalkrishnajs/.local/share/mise/installs/opencode/latest"
+        - "/home/gopalkrishnajs/.local/share/mise/installs/pi/latest/pi"
+        - "/home/gopalkrishnajs/.local/share/mise/shims"
+        - "/home/gopalkrishnajs/.local/bin"
+        - "/home/gopalkrishnajs/.local/bin"
+        - "/usr/share/omarchy/bin"
+        - "/home/gopalkrishnajs/.local/bin"
+        - "/home/gopalkrishnajs/.local/bin"
+        - "/home/gopalkrishnajs/.cargo/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/home/gopalkrishnajs/.local/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CTest.cmake:188 (find_program)"
+      - "CMakeLists.txt:35 (include)"
+    mode: "program"
+    variable: "MEMORYCHECK_COMMAND"
+    description: "Path to the memory checking command, used for memory error detection."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "purify"
+      - "valgrind"
+      - "boundscheck"
+      - "drmemory"
+      - "cuda-memcheck"
+      - "compute-sanitizer"
+    candidate_directories:
+      - "/home/gopalkrishnajs/.local/share/mise/installs/codex/latest/bin/"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/copilot/latest/"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/gh/latest/gh_2.102.0_linux_amd64/bin/"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/github-can1357-oh-my-pi/latest/"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/go/1.27.1/bin/"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/java/latest/bin/"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/node/26.7.0/bin/"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/opencode/latest/"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/pi/latest/pi/"
+      - "/home/gopalkrishnajs/.local/share/mise/shims/"
+      - "/home/gopalkrishnajs/.local/bin/"
+      - "/usr/share/omarchy/bin/"
+      - "/home/gopalkrishnajs/.cargo/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/usr/local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/"
+      - "/usr/bin/"
+      - "/usr/sbin/"
+      - "/usr/"
+      - "/bin/"
+      - "/sbin/"
+      - "/usr/X11R6/bin/"
+      - "/usr/X11R6/sbin/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/bin/"
+      - "/usr/pkg/sbin/"
+      - "/usr/pkg/"
+      - "/opt/bin/"
+      - "/opt/sbin/"
+      - "/opt/"
+    searched_directories:
+      - "/home/gopalkrishnajs/.local/share/mise/installs/codex/latest/bin/purify"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/copilot/latest/purify"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/gh/latest/gh_2.102.0_linux_amd64/bin/purify"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/github-can1357-oh-my-pi/latest/purify"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/go/1.27.1/bin/purify"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/java/latest/bin/purify"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/node/26.7.0/bin/purify"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/opencode/latest/purify"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/pi/latest/pi/purify"
+      - "/home/gopalkrishnajs/.local/share/mise/shims/purify"
+      - "/home/gopalkrishnajs/.local/bin/purify"
+      - "/usr/share/omarchy/bin/purify"
+      - "/home/gopalkrishnajs/.cargo/bin/purify"
+      - "/usr/local/sbin/purify"
+      - "/usr/local/bin/purify"
+      - "/usr/bin/purify"
+      - "/usr/lib/jvm/default/bin/purify"
+      - "/usr/bin/site_perl/purify"
+      - "/usr/bin/vendor_perl/purify"
+      - "/usr/bin/core_perl/purify"
+      - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/purify"
+      - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/purify"
+      - "/usr/local/bin/purify"
+      - "/usr/local/sbin/purify"
+      - "/usr/local/purify"
+      - "/usr/bin/purify"
+      - "/usr/sbin/purify"
+      - "/usr/purify"
+      - "/bin/purify"
+      - "/sbin/purify"
+      - "/usr/X11R6/bin/purify"
+      - "/usr/X11R6/sbin/purify"
+      - "/usr/X11R6/purify"
+      - "/usr/pkg/bin/purify"
+      - "/usr/pkg/sbin/purify"
+      - "/usr/pkg/purify"
+      - "/opt/bin/purify"
+      - "/opt/sbin/purify"
+      - "/opt/purify"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/codex/latest/bin/valgrind"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/copilot/latest/valgrind"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/gh/latest/gh_2.102.0_linux_amd64/bin/valgrind"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/github-can1357-oh-my-pi/latest/valgrind"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/go/1.27.1/bin/valgrind"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/java/latest/bin/valgrind"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/node/26.7.0/bin/valgrind"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/opencode/latest/valgrind"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/pi/latest/pi/valgrind"
+      - "/home/gopalkrishnajs/.local/share/mise/shims/valgrind"
+      - "/home/gopalkrishnajs/.local/bin/valgrind"
+      - "/usr/share/omarchy/bin/valgrind"
+      - "/home/gopalkrishnajs/.cargo/bin/valgrind"
+      - "/usr/local/sbin/valgrind"
+      - "/usr/local/bin/valgrind"
+      - "/usr/bin/valgrind"
+      - "/usr/lib/jvm/default/bin/valgrind"
+      - "/usr/bin/site_perl/valgrind"
+      - "/usr/bin/vendor_perl/valgrind"
+      - "/usr/bin/core_perl/valgrind"
+      - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/valgrind"
+      - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/valgrind"
+      - "/usr/local/bin/valgrind"
+      - "/usr/local/sbin/valgrind"
+      - "/usr/local/valgrind"
+      - "/usr/bin/valgrind"
+      - "/usr/sbin/valgrind"
+      - "/usr/valgrind"
+      - "/bin/valgrind"
+      - "/sbin/valgrind"
+      - "/usr/X11R6/bin/valgrind"
+      - "/usr/X11R6/sbin/valgrind"
+      - "/usr/X11R6/valgrind"
+      - "/usr/pkg/bin/valgrind"
+      - "/usr/pkg/sbin/valgrind"
+      - "/usr/pkg/valgrind"
+      - "/opt/bin/valgrind"
+      - "/opt/sbin/valgrind"
+      - "/opt/valgrind"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/codex/latest/bin/boundscheck"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/copilot/latest/boundscheck"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/gh/latest/gh_2.102.0_linux_amd64/bin/boundscheck"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/github-can1357-oh-my-pi/latest/boundscheck"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/go/1.27.1/bin/boundscheck"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/java/latest/bin/boundscheck"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/node/26.7.0/bin/boundscheck"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/opencode/latest/boundscheck"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/pi/latest/pi/boundscheck"
+      - "/home/gopalkrishnajs/.local/share/mise/shims/boundscheck"
+      - "/home/gopalkrishnajs/.local/bin/boundscheck"
+      - "/usr/share/omarchy/bin/boundscheck"
+      - "/home/gopalkrishnajs/.cargo/bin/boundscheck"
+      - "/usr/local/sbin/boundscheck"
+      - "/usr/local/bin/boundscheck"
+      - "/usr/bin/boundscheck"
+      - "/usr/lib/jvm/default/bin/boundscheck"
+      - "/usr/bin/site_perl/boundscheck"
+      - "/usr/bin/vendor_perl/boundscheck"
+      - "/usr/bin/core_perl/boundscheck"
+      - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/boundscheck"
+      - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/boundscheck"
+      - "/usr/local/bin/boundscheck"
+      - "/usr/local/sbin/boundscheck"
+      - "/usr/local/boundscheck"
+      - "/usr/bin/boundscheck"
+      - "/usr/sbin/boundscheck"
+      - "/usr/boundscheck"
+      - "/bin/boundscheck"
+      - "/sbin/boundscheck"
+      - "/usr/X11R6/bin/boundscheck"
+      - "/usr/X11R6/sbin/boundscheck"
+      - "/usr/X11R6/boundscheck"
+      - "/usr/pkg/bin/boundscheck"
+      - "/usr/pkg/sbin/boundscheck"
+      - "/usr/pkg/boundscheck"
+      - "/opt/bin/boundscheck"
+      - "/opt/sbin/boundscheck"
+      - "/opt/boundscheck"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/codex/latest/bin/drmemory"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/copilot/latest/drmemory"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/gh/latest/gh_2.102.0_linux_amd64/bin/drmemory"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/github-can1357-oh-my-pi/latest/drmemory"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/go/1.27.1/bin/drmemory"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/java/latest/bin/drmemory"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/node/26.7.0/bin/drmemory"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/opencode/latest/drmemory"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/pi/latest/pi/drmemory"
+      - "/home/gopalkrishnajs/.local/share/mise/shims/drmemory"
+      - "/home/gopalkrishnajs/.local/bin/drmemory"
+      - "/usr/share/omarchy/bin/drmemory"
+      - "/home/gopalkrishnajs/.cargo/bin/drmemory"
+      - "/usr/local/sbin/drmemory"
+      - "/usr/local/bin/drmemory"
+      - "/usr/bin/drmemory"
+      - "/usr/lib/jvm/default/bin/drmemory"
+      - "/usr/bin/site_perl/drmemory"
+      - "/usr/bin/vendor_perl/drmemory"
+      - "/usr/bin/core_perl/drmemory"
+      - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/drmemory"
+      - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/drmemory"
+      - "/usr/local/bin/drmemory"
+      - "/usr/local/sbin/drmemory"
+      - "/usr/local/drmemory"
+      - "/usr/bin/drmemory"
+      - "/usr/sbin/drmemory"
+      - "/usr/drmemory"
+      - "/bin/drmemory"
+      - "/sbin/drmemory"
+      - "/usr/X11R6/bin/drmemory"
+      - "/usr/X11R6/sbin/drmemory"
+      - "/usr/X11R6/drmemory"
+      - "/usr/pkg/bin/drmemory"
+      - "/usr/pkg/sbin/drmemory"
+      - "/usr/pkg/drmemory"
+      - "/opt/bin/drmemory"
+      - "/opt/sbin/drmemory"
+      - "/opt/drmemory"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/codex/latest/bin/cuda-memcheck"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/copilot/latest/cuda-memcheck"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/gh/latest/gh_2.102.0_linux_amd64/bin/cuda-memcheck"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/github-can1357-oh-my-pi/latest/cuda-memcheck"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/go/1.27.1/bin/cuda-memcheck"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/java/latest/bin/cuda-memcheck"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/node/26.7.0/bin/cuda-memcheck"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/opencode/latest/cuda-memcheck"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/pi/latest/pi/cuda-memcheck"
+      - "/home/gopalkrishnajs/.local/share/mise/shims/cuda-memcheck"
+      - "/home/gopalkrishnajs/.local/bin/cuda-memcheck"
+      - "/usr/share/omarchy/bin/cuda-memcheck"
+      - "/home/gopalkrishnajs/.cargo/bin/cuda-memcheck"
+      - "/usr/local/sbin/cuda-memcheck"
+      - "/usr/local/bin/cuda-memcheck"
+      - "/usr/bin/cuda-memcheck"
+      - "/usr/lib/jvm/default/bin/cuda-memcheck"
+      - "/usr/bin/site_perl/cuda-memcheck"
+      - "/usr/bin/vendor_perl/cuda-memcheck"
+      - "/usr/bin/core_perl/cuda-memcheck"
+      - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/cuda-memcheck"
+      - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/cuda-memcheck"
+      - "/usr/local/bin/cuda-memcheck"
+      - "/usr/local/sbin/cuda-memcheck"
+      - "/usr/local/cuda-memcheck"
+      - "/usr/bin/cuda-memcheck"
+      - "/usr/sbin/cuda-memcheck"
+      - "/usr/cuda-memcheck"
+      - "/bin/cuda-memcheck"
+      - "/sbin/cuda-memcheck"
+      - "/usr/X11R6/bin/cuda-memcheck"
+      - "/usr/X11R6/sbin/cuda-memcheck"
+      - "/usr/X11R6/cuda-memcheck"
+      - "/usr/pkg/bin/cuda-memcheck"
+      - "/usr/pkg/sbin/cuda-memcheck"
+      - "/usr/pkg/cuda-memcheck"
+      - "/opt/bin/cuda-memcheck"
+      - "/opt/sbin/cuda-memcheck"
+      - "/opt/cuda-memcheck"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/codex/latest/bin/compute-sanitizer"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/copilot/latest/compute-sanitizer"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/gh/latest/gh_2.102.0_linux_amd64/bin/compute-sanitizer"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/github-can1357-oh-my-pi/latest/compute-sanitizer"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/go/1.27.1/bin/compute-sanitizer"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/java/latest/bin/compute-sanitizer"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/node/26.7.0/bin/compute-sanitizer"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/opencode/latest/compute-sanitizer"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/pi/latest/pi/compute-sanitizer"
+      - "/home/gopalkrishnajs/.local/share/mise/shims/compute-sanitizer"
+      - "/home/gopalkrishnajs/.local/bin/compute-sanitizer"
+      - "/usr/share/omarchy/bin/compute-sanitizer"
+      - "/home/gopalkrishnajs/.cargo/bin/compute-sanitizer"
+      - "/usr/local/sbin/compute-sanitizer"
+      - "/usr/local/bin/compute-sanitizer"
+      - "/usr/bin/compute-sanitizer"
+      - "/usr/lib/jvm/default/bin/compute-sanitizer"
+      - "/usr/bin/site_perl/compute-sanitizer"
+      - "/usr/bin/vendor_perl/compute-sanitizer"
+      - "/usr/bin/core_perl/compute-sanitizer"
+      - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/compute-sanitizer"
+      - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/compute-sanitizer"
+      - "/usr/local/bin/compute-sanitizer"
+      - "/usr/local/sbin/compute-sanitizer"
+      - "/usr/local/compute-sanitizer"
+      - "/usr/bin/compute-sanitizer"
+      - "/usr/sbin/compute-sanitizer"
+      - "/usr/compute-sanitizer"
+      - "/bin/compute-sanitizer"
+      - "/sbin/compute-sanitizer"
+      - "/usr/X11R6/bin/compute-sanitizer"
+      - "/usr/X11R6/sbin/compute-sanitizer"
+      - "/usr/X11R6/compute-sanitizer"
+      - "/usr/pkg/bin/compute-sanitizer"
+      - "/usr/pkg/sbin/compute-sanitizer"
+      - "/usr/pkg/compute-sanitizer"
+      - "/opt/bin/compute-sanitizer"
+      - "/opt/sbin/compute-sanitizer"
+      - "/opt/compute-sanitizer"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "/home/gopalkrishnajs/.local/share/mise/installs/codex/latest/bin"
+        - "/home/gopalkrishnajs/.local/share/mise/installs/copilot/latest"
+        - "/home/gopalkrishnajs/.local/share/mise/installs/gh/latest/gh_2.102.0_linux_amd64/bin"
+        - "/home/gopalkrishnajs/.local/share/mise/installs/github-can1357-oh-my-pi/latest"
+        - "/home/gopalkrishnajs/.local/share/mise/installs/go/1.27.1/bin"
+        - "/home/gopalkrishnajs/.local/share/mise/installs/java/latest/bin"
+        - "/home/gopalkrishnajs/.local/share/mise/installs/node/26.7.0/bin"
+        - "/home/gopalkrishnajs/.local/share/mise/installs/opencode/latest"
+        - "/home/gopalkrishnajs/.local/share/mise/installs/pi/latest/pi"
+        - "/home/gopalkrishnajs/.local/share/mise/shims"
+        - "/home/gopalkrishnajs/.local/bin"
+        - "/home/gopalkrishnajs/.local/bin"
+        - "/usr/share/omarchy/bin"
+        - "/home/gopalkrishnajs/.local/bin"
+        - "/home/gopalkrishnajs/.local/bin"
+        - "/home/gopalkrishnajs/.cargo/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/home/gopalkrishnajs/.local/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CTest.cmake:196 (find_program)"
+      - "CMakeLists.txt:35 (include)"
+    mode: "program"
+    variable: "COVERAGE_COMMAND"
+    description: "Path to the coverage program that CTest uses for performing coverage inspection"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "gcov"
+    candidate_directories:
+      - "/home/gopalkrishnajs/.local/share/mise/installs/codex/latest/bin/"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/copilot/latest/"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/gh/latest/gh_2.102.0_linux_amd64/bin/"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/github-can1357-oh-my-pi/latest/"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/go/1.27.1/bin/"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/java/latest/bin/"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/node/26.7.0/bin/"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/opencode/latest/"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/pi/latest/pi/"
+      - "/home/gopalkrishnajs/.local/share/mise/shims/"
+      - "/home/gopalkrishnajs/.local/bin/"
+      - "/usr/share/omarchy/bin/"
+      - "/home/gopalkrishnajs/.cargo/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/usr/local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/"
+      - "/usr/bin/"
+      - "/usr/sbin/"
+      - "/usr/"
+      - "/bin/"
+      - "/sbin/"
+      - "/usr/X11R6/bin/"
+      - "/usr/X11R6/sbin/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/bin/"
+      - "/usr/pkg/sbin/"
+      - "/usr/pkg/"
+      - "/opt/bin/"
+      - "/opt/sbin/"
+      - "/opt/"
+    searched_directories:
+      - "/home/gopalkrishnajs/.local/share/mise/installs/codex/latest/bin/gcov"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/copilot/latest/gcov"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/gh/latest/gh_2.102.0_linux_amd64/bin/gcov"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/github-can1357-oh-my-pi/latest/gcov"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/go/1.27.1/bin/gcov"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/java/latest/bin/gcov"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/node/26.7.0/bin/gcov"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/opencode/latest/gcov"
+      - "/home/gopalkrishnajs/.local/share/mise/installs/pi/latest/pi/gcov"
+      - "/home/gopalkrishnajs/.local/share/mise/shims/gcov"
+      - "/home/gopalkrishnajs/.local/bin/gcov"
+      - "/usr/share/omarchy/bin/gcov"
+      - "/home/gopalkrishnajs/.cargo/bin/gcov"
+      - "/usr/local/sbin/gcov"
+      - "/usr/local/bin/gcov"
+    found: "/usr/bin/gcov"
+    search_context:
+      ENV{PATH}:
+        - "/home/gopalkrishnajs/.local/share/mise/installs/codex/latest/bin"
+        - "/home/gopalkrishnajs/.local/share/mise/installs/copilot/latest"
+        - "/home/gopalkrishnajs/.local/share/mise/installs/gh/latest/gh_2.102.0_linux_amd64/bin"
+        - "/home/gopalkrishnajs/.local/share/mise/installs/github-can1357-oh-my-pi/latest"
+        - "/home/gopalkrishnajs/.local/share/mise/installs/go/1.27.1/bin"
+        - "/home/gopalkrishnajs/.local/share/mise/installs/java/latest/bin"
+        - "/home/gopalkrishnajs/.local/share/mise/installs/node/26.7.0/bin"
+        - "/home/gopalkrishnajs/.local/share/mise/installs/opencode/latest"
+        - "/home/gopalkrishnajs/.local/share/mise/installs/pi/latest/pi"
+        - "/home/gopalkrishnajs/.local/share/mise/shims"
+        - "/home/gopalkrishnajs/.local/bin"
+        - "/home/gopalkrishnajs/.local/bin"
+        - "/usr/share/omarchy/bin"
+        - "/home/gopalkrishnajs/.local/bin"
+        - "/home/gopalkrishnajs/.local/bin"
+        - "/home/gopalkrishnajs/.cargo/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/home/gopalkrishnajs/.local/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/gopalkrishnajs/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
 ...

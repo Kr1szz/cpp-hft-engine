@@ -1,25 +1,16 @@
-#pragma once 
+#pragma once
 
 #include <cstdint>
-using orderId  = std::uint64_t;
-using Price = std::uint64_t;
-using Quantity = std:: uint64_t;
 
-enum class Side{
-  Buy,
-  Sell
+enum class Side {
+    Buy,
+    Sell
 };
 
-enum class OrderType{
-  Limit,
-  Market
-};
-
-struct Order{
-  orderID id;
-  Side side;
-  OrderType type;
-  Price price;
-  Quantity quantity;
-  std::uint64_t timestamp;
+struct Order {
+    std::uint64_t id;
+    Side side;
+    std::int64_t price;       // Integer price ticks
+    std::uint32_t quantity;
+    std::uint64_t timestamp;  // Arrival sequence
 };
