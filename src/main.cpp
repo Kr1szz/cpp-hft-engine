@@ -1,46 +1,36 @@
-#include "Order.hpp"
+#include "OrderBook.hpp"
 
 #include <iostream>
 
 int main() {
-    const Order buy_order{
-        1,
-        Side::Buy,
-        2005,
-        100,
-        1
-    };
+    OrderBook book;
 
-    const Order sell_order{
-        2,
-        Side::Sell,
-        2010,
-        50,
-        2
-    };
+    book.add_order(Order{1, Side::Buy, 2000, 10, 1});
+    book.add_order(Order{2, Side::Buy, 2010, 5, 2});
 
-    std::cout << "C++ HFT Matching Engine\n";
-    std::cout << "-----------------------\n";
+    book.add_order(Order{3, Side::Sell, 2030, 7, 3});
+    book.add_order(Order{4, Side::Sell, 2020, 4, 4});
 
-    std::cout << "Buy order ID: "
-              << buy_order.id << '\n';
+    const auto best_bid = book.best_bid_price();
+    const auto best_ask = book.best_ask_price();
 
-    std::cout << "Buy price (ticks): "
-              << buy_order.price << '\n';
+    std::cout << "C++ HFT Order Book\n";
+    std::cout << "------------------\n";
 
-    std::cout << "Buy quantity: "
-              << buy_order.quantity << '\n';
+    if (best_bid.has_value()) {
+        std::cout << "Best bid: "
+                  << *best_bid << " ticks\n";
+    }
 
-    std::cout << "Sell price (ticks): "
-              << sell_order.price << '\n';
+    if (best_ask.has_value()) {
+        std::cout << "Best ask: "
+                  << *best_ask << " ticks\n";
+    }
 
-    std::cout << "Sell quantity: "
-              << sell_order.quantity << '\n';
-
-    if (buy_order.price >= sell_order.price) {
-        std::cout << "Orders can potentially match.\n";
-    } else {
-        std::cout << "No price match yet.\n";
+    if (best_bid.has_value() && best_ask.has_value()) {
+        std::cout << "Spread: "
+                  << (*best_ask - *best_bid)
+                  << " ticks\n";
     }
 
     return 0;

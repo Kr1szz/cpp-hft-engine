@@ -10,7 +10,7 @@ enum class Side {
 struct Order {
     std::uint64_t id;
     Side side;
-    std::int64_t price;       // Integer price ticks
+    std::int64_t price;
     std::uint32_t quantity;
-    std::uint64_t timestamp;  // Arrival sequence
+    std::uint64_t timestamp;
 };
